@@ -1,0 +1,11 @@
+.Post{
+    width:30%;
+    margin: 0 10px;
+    box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.Post .Author{
+    font-size: 12px;
+    color: #888;
+}
