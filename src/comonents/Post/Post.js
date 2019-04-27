@@ -1,7 +1,7 @@
 import React, {PureComponent} from 'react';
 import './Post.css';
 
-class Post extends PureComponent {
+class Post extends PureComponent { //#2 eto delaet toje samoye
     componentDidMount(){
         console.log('[Post] DidMount');
     }
@@ -10,6 +10,8 @@ class Post extends PureComponent {
         console.log('[Post] DidUpdate');
     }
 
+
+    //Mojem sravnit esli oni takiye ne primitivnye
     // shouldComponentUpdate(nextProps,nextState){
     //     console.log('[Post] SHouldUpdate');
     //
@@ -21,7 +23,7 @@ class Post extends PureComponent {
         console.log('[Post] render');
         return (
             <div>
-               <article className={"Post"}>
+               <article className={"Post"} onClick={this.props.clicked}>
                    <h1>{this.props.title}</h1>
                    <div className="Info">
                        <div className="Author">
